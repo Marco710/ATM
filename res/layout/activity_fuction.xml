@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".FuctionActivity" >
+
+  <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+  
+  <Button 
+	    android:id="@+id/fuction_btn_registercard"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/msg"
+	    android:text="申请银行卡"
+	  />
+  
+   <Button 
+	    android:id="@+id/fuction_btn_userinfo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fuction_btn_registercard"
+	    android:text="个人信息"
+	  />
+   
+    <Button 
+	    android:id="@+id/fuction_btn_cardinfo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fuction_btn_userinfo"
+	    android:text="银行卡信息"
+	  />
+   <Button 
+	    android:id="@+id/fuction_btn_payfee"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fuction_btn_cardinfo"
+	    android:text="生活缴费"
+	  />
+   <Button 
+	    android:id="@+id/fuction_btn_transfer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fuction_btn_payfee"
+	    android:text="个人转账"
+	  />
+   
+    <Button 
+	    android:id="@+id/fuction_btn_checktradeinfo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/fuction_btn_transfer"
+	    android:text="查看交易记录"
+	  />
+  
+</RelativeLayout>

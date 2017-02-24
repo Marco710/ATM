@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CheckTradeInfoActivity" >
+
+    <TextView
+	        android:id="@+id/checktradeinfo_text_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="10pt"
+	        android:text="交易记录" />
+    
+    
+    <Button 
+        android:id="@+id/return_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checktradeinfo_text_title"
+        android:text="返回"
+        />
+    
+    <TextView 
+	        android:id="@+id/checktradeinfo_text_cardno"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/return_btn"
+	        android:text="请选泽要查看的银行卡："
+	        />
+		<Spinner 
+		    android:id="@+id/spinner"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/checktradeinfo_text_cardno"
+		    />
+		 <ListView 
+	        android:id="@+id/listView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/spinner"
+	        android:layout_marginLeft="24dp"
+        >
+    	</ListView>
+		
+
+</RelativeLayout>

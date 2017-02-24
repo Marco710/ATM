@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:paddingBottom="@dimen/activity_vertical_margin"
+	    android:paddingLeft="@dimen/activity_horizontal_margin"
+	    android:paddingRight="@dimen/activity_horizontal_margin"
+	    android:paddingTop="@dimen/activity_vertical_margin"
+	    tools:context=".RegisterActivity" >
+	
+	    <!-- Spinner   CheckBox -->
+	    <TextView
+	        android:id="@+id/register_text_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:textSize="20pt"
+	        android:text="注册界面" />
+	    <!-- 用户名 -->
+	    <TextView 
+	        android:id="@+id/register_text_realname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_title"
+	        android:text="用户名："
+	        />
+	    <EditText 
+	        android:id="@+id/register_edit_realname"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_realname"
+	        android:hint="请输入真实姓名"
+	        />
+	    <!-- 性别-->
+	    <TextView 
+	        android:id="@+id/register_text_sex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_realname"
+	        android:text="性别："
+	        />
+	    
+	    <RadioGroup
+	        android:id="@+id/register_group_sex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_sex"
+	        >
+	        
+	     <RadioButton
+	        android:id="@+id/register_radio_female"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="女"
+	        android:checked="true"/>
+	        
+	      <RadioButton
+	        android:id="@+id/register_radio_male"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	       	
+	        android:text="男" />
+	      </RadioGroup>
+	      
+	    <!-- 身份证 -->
+	    <TextView 
+	        android:id="@+id/register_text_identity"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_group_sex"
+	        android:text="身份证件号码："
+	        />
+	    <EditText 
+	        android:id="@+id/register_edit_identity"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_identity"
+	        android:hint="请输入身份证号码"
+	        />
+	    
+	     <!-- 手机号 -->
+	    <TextView 
+	        android:id="@+id/register_text_tel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_identity"
+	        android:text="手机号"
+	        />
+	    <EditText 
+	        android:id="@+id/register_edit_tel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_tel"
+	        android:hint="请输入手机号"
+	        />
+		<!-- 密码 -->
+		
+	    <TextView 
+	        android:id="@+id/register_text_logpwd"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_tel"
+	        android:text="登陆密码："
+	        />
+	    <EditText 
+	        android:id="@+id/register_edit_logpwd"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_text_logpwd"
+	        android:hint="请输入密码"
+	        />
+	    
+	    
+	    <!-- 注册按钮 -->
+	    <Button 
+	        android:id="@+id/register_btn_ok"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_logpwd"
+	        android:text="注册"
+	        />
+	    <!-- 取消 -->
+	     <Button 
+	        android:id="@+id/register_btn_cancel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_logpwd"
+	        android:layout_toRightOf="@id/register_btn_ok"
+	        android:text="取消"
+	        />
+	    <!-- 重置 -->
+	    <Button 
+	        android:id="@+id/register_btn_reset"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/register_edit_logpwd"
+	        android:layout_toRightOf="@id/register_btn_cancel"
+	        android:text="重置"
+	        />
+
+	   
+
+	</RelativeLayout>
+</ScrollView>
